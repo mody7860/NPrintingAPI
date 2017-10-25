@@ -10,12 +10,12 @@ Repository contains assets which enable schedule actions with the Qlik NPrinting
     status back to the caller.
 # .EXAMPLE    
     ./NPrintingAPITaskMgmt.ps1 -hostname nprintserver:4993 -taskname "Reload Operations Monitor" -interval 15
-    Start the named task "Reload Operations Monitor" on nprintserver.airproducts.com. 
+    Start the named task "Reload Operations Monitor" on nprintserver.domain.com. 
     Check the status of the task every 15 seconds.
     
 # .EXAMPLE
-    ./NPrintingAPITaskMgmt.ps1 -hostname nprintserver.airproducts.com -taskname "Reload Executive Dashboard" -interval 60
-    Start the named task "Reload Executive Dashboard" on nprintserver.airproducts.com. Check the status of the task every 60 seconds.
+    ./NPrintingAPITaskMgmt.ps1 -hostname nprintserver.domain.com -taskname "Reload Executive Dashboard" -interval 60
+    Start the named task "Reload Executive Dashboard" on nprintserver.domain.com. Check the status of the task every 60 seconds.
     .PARAMETER hostname
                 Hostname (or IP address) of the Nprinting Server 
     .PARAMETER taskname
