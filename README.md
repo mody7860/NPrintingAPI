@@ -24,7 +24,7 @@ Repository contains assets which enable schedule actions with the Qlik NPrinting
                 The amount of time (in seconds) between task status checks for the currently executing task.
                   
     .NOTES  
-        File Name  : sensetaskreload.ps1
+        File Name  : NPrintingAPITaskMgmt.ps1
         Version    : 1.0 
         Author     : Irshad Mody 
         Requires   : PowerShell (tested on v5)
