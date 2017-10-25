@@ -1,6 +1,6 @@
 <#  
 .SYNOPSIS  
-    Execute task reloads (by name ) and return status message on success/failure.
+    Execute task  (by name ) and return status message on success/failure.
      
 .DESCRIPTION  
     This script authnticates with the NPrinting API, then uses session tokens to get tasks lists and finds the matching task to execute.  
@@ -8,15 +8,15 @@
     to the caller.
 
 .EXAMPLE    
-    ./NPrinting.ps1 -hostname nprintserver:4993 -taskname "Reload Operations Monitor" -interval 15
+    ./NPrintingAPITaskMgmt.ps1 -hostname nprintserver:4993 -taskname "Reload Operations Monitor" -interval 15
 
-    Start the named task "Reload Operations Monitor" on nprintserver.airproducts.com. 
+    Start the named task "Reload Operations Monitor" on nprintserver.Domain.com. 
     Check the status of the task every 15 seconds.
     
 .EXAMPLE
-    ./NPrinting.ps1 -hostname nprintserver.airproducts.com -taskname "Reload Executive Dashboard" -interval 60
+    ./NPrintingAPITaskMgmt.ps1 -hostname nprintserver:4993 -taskname "Reload Executive Dashboard" -interval 60
 
-    Start the named task "Reload Executive Dashboard" on nprintserver.airproducts.com. Check the status of the task every 60 seconds.
+    Start the named task "Reload Executive Dashboard" on nprintserver.domain.com. Check the status of the task every 60 seconds.
 
 
 .PARAMETER hostname
@@ -28,7 +28,7 @@
             The amount of time (in seconds) between task status checks for the currently executing task.
                   
 .NOTES  
-    File Name  : sensetaskreload.ps1
+    File Name  : NPrintingAPITaskMgmt.ps1
     Version    : 1.0 
     Author     : Irshad Mody 
     Requires   : PowerShell (tested on v5)
