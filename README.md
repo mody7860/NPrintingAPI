@@ -2,7 +2,7 @@
 Repository contains assets which enable schedule actions with the Qlik NPrinting API
 
 # .SYNOPSIS  
-    Execute task reloads (by name ) and return status message on success/failure.
+    Execute task (by name ) and return status message on success/failure.
      
 # .DESCRIPTION  
     This script authnticates with the NPrinting API, then uses session tokens to get tasks lists and finds the matching task to execute.  
